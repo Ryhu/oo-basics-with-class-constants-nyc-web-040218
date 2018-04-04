@@ -13,7 +13,7 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
-  def brand =(input)
+  def brand=(input)
     if !BRANDS.contains?(input)
       BRANDS << input
     end
