@@ -4,8 +4,11 @@ class Shoe
 
   BRANDS = []
   
-  def initialize(brand)
-    @brand = brand
+  def initialize(input)
+    @brand = input
+    if !BRANDS.contains?(input)
+      BRANDS << input
+    end
   end
 
   def cobble
